@@ -5,20 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Jose Sanchez – Product Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <!-- AOS Scroll Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
 <body>
   <div class="container">
 
-    <section class="intro">
+    <section class="intro" data-aos="fade-up">
       <h1>Jose Sanchez</h1>
       <p class="subtitle">Aspiring Product Manager | CS + Data Science @ UW</p>
       <p>I love building ethical, inclusive tech that solves real-world problems. Welcome to my portfolio.</p>
     </section>
 
-    <section class="projects">
+    <section class="projects" data-aos="fade-up">
       <h2>Featured Projects</h2>
 
-      <div class="project">
+      <div class="project" data-aos="fade-right">
         <h3>ModelUs – Biased Voice AI Tool</h3>
         <ul>
           <li>Simulates bias in voice transcription to help students identify fairness issues in AI.</li>
@@ -27,7 +29,7 @@
         </ul>
       </div>
 
-      <div class="project">
+      <div class="project" data-aos="fade-left">
         <h3>ARchive – AR Storytelling App</h3>
         <ul>
           <li>Hackathon project using Unity and Figma to preserve Seattle’s Central District history.</li>
@@ -36,7 +38,7 @@
       </div>
     </section>
 
-    <section class="experience">
+    <section class="experience" data-aos="fade-up">
       <h2>Experience</h2>
 
       <div>
@@ -55,7 +57,7 @@
       </div>
     </section>
 
-    <section class="contact">
+    <section class="contact" data-aos="zoom-in">
       <h2>Contact</h2>
       <p>Email: <a href="mailto:joses4@uw.edu">joses4@uw.edu</a></p>
       <p>LinkedIn: <a href="https://linkedin.com/in/joscsanchez" target="_blank">joscsanchez</a></p>
@@ -63,5 +65,14 @@
     </section>
 
   </div>
+    <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800, // animation duration in ms
+      offset: 100,   // offset (in px) from the original trigger point
+      once: true     // whether animation should happen only once
+    });
+  </script>
 </body>
 </html>
